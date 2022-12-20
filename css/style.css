@@ -225,8 +225,9 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 63%;
-	margin-left: 20px;
-	margin-right: 20px;
+	/* margin-left: 20px; */
+	/* margin-right: 20px; */
+	padding: 10px;
 	border-radius: 20px;
 	/* background-color: rgb(87, 28, 182); */
 	background-color: #F2F2F2;
@@ -246,7 +247,8 @@ p {
 .lodging-card {
 	width: 236px;
 	height: 200px;
-	margin-top: 23px;
+	/* margin-top: 23px; */
+	margin: 10px;
 	border-radius: 20px;
 	background-color: #FFF;
 }
@@ -294,6 +296,7 @@ p {
 	justify-content: center;
 	align-items: flex-start;
 	margin: 0 20px;
+	padding: 15px;
 	border-radius: 20px;
 	/* background-color: rgb(87, 28, 182); */
 	background-color: #F2F2F2;
@@ -417,6 +420,7 @@ p {
 
 .lodging-cards a, .popular-list a, .activities-cards a {
 	color: #000;
+	/* margin-left: 10px; */
 	text-decoration: none;
 }
 
@@ -465,15 +469,9 @@ p {
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-	.main-header {
-		background-color: #1c0b57;
-	}
-
-
-
+	
 	.main-filter {
 		max-width: 88%;
-		background-color: rgb(61, 7, 122);
 	}
 
 
@@ -535,7 +533,7 @@ p {
 	}
 
 	.activities-card img {
-		width: 182px;
+		/* width: 182px; */
 		height: 211px;
 	}
 }
@@ -543,10 +541,6 @@ p {
 
 
 @media screen and (max-width: 768px) {
-
-	/* #container {
-		max-width: 375px;
-	} */
 
 	.main-header {
 		height: 160px;
@@ -629,8 +623,9 @@ p {
 
 
 	.main-lodging {
-		max-width: 375px;
+		max-width: 100%;
 		margin: auto;
+		/* padding: 10px; */
 		flex-direction: column;
 	}
 
@@ -665,10 +660,6 @@ p {
 
 
 
-	.main-lodging {
-		max-width: 100%;
-	}
-
 	.popular {
 		/* flex-basis: 100%; */
 		order: 1;
@@ -678,13 +669,13 @@ p {
 
 	.popular-list {
 		width: 334px;
-		height: 460px;
+		/* height: 460px; */
 		margin-bottom: 47px;
 	}
 
 	.popular-title {
 		margin-bottom: 26px;
-		margin: 42px 70px 26px 70px;
+		/* margin: 42px 70px 26px 70px; */
 	}
 
 
