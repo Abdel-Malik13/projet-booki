@@ -225,8 +225,8 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 63%;
-	/* margin-left: 20px; */
 	/* margin-right: 20px; */
+	margin-left: 20px;
 	padding: 10px;
 	border-radius: 20px;
 	/* background-color: rgb(87, 28, 182); */
@@ -304,7 +304,7 @@ p {
 
 .popular-title {
 	display: flex;
-	flex-basis: 343px;
+	flex-basis: 100%;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 42px;
@@ -483,7 +483,7 @@ p {
 
 	.lodging {
 		flex-basis: 100%;
-		margin-bottom: 53px;
+		margin: 0 20px 53px 20px;
 	}
 
 
@@ -535,6 +535,13 @@ p {
 	.activities-card img {
 		/* width: 182px; */
 		height: 211px;
+	}
+
+
+
+	.main-footer {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
@@ -631,6 +638,7 @@ p {
 
 	.lodging {
 		order: 2;
+		margin-left: 0;
 		background-color: #FFF;
 	}
 
@@ -639,13 +647,14 @@ p {
 	}
 
 	.lodging-card {
-		width: 335px;
+		width: 295px;
 		height: 205px;
+		margin: 10px 0 10px 0;
 		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
 	}
 
 	.lodging-card img {
-		width: 335px;
+		width: 295px;
 		height: 124px;
 	}
 
