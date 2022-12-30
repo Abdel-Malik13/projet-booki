@@ -16,12 +16,15 @@ body {
 	font-weight: 400;
 }
 
-h1 {
+
+
+/* General rules */
+h1, h2 {
 	font-size: 2em;
 	font-weight: 700;
 }
 
-h2 {
+h3 {
 	font-size: 1.6em;
 	font-weight: 700;
 }
@@ -32,6 +35,7 @@ p {
 
 
 
+/* Main header with logo and main navigation */
 .main-header {
 	display: flex;
 	max-width: 1400px;
@@ -84,6 +88,7 @@ p {
 
 
 
+/* Search section with filters, main title (h1) */
 .main-search {
 	display: flex;
 	max-width: 1400px;
@@ -149,6 +154,8 @@ p {
 	max-width: 60px;
 }
 
+
+/* Filter buttons in the search section */
 .main-filter {
 	display: flex;
 	max-width: 100%;
@@ -157,12 +164,14 @@ p {
 	align-items: center;
 }
 
-
-
 .filters {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
+}
+
+.filters-title h2 {
+	font-size: 1.6em;
 }
 
 .filter-btn {
@@ -194,6 +203,7 @@ p {
 }
 
 
+/* Text information in the search section */
 .main-info {
 	display: flex;
 	align-items: center;
@@ -208,6 +218,7 @@ p {
 
 
 
+/* Parent of lodging and popular section's */
 .main-lodging {
 	display: flex;
 	max-width: 1400px;
@@ -216,6 +227,7 @@ p {
 	justify-content: space-between;
 }
 
+/* Lodging section */
 .lodging {
 	display: flex;
 	flex-basis: 63%;
@@ -226,9 +238,10 @@ p {
 	background-color: #F2F2F2;
 }
 
-.lodging h1 {
+.lodging h2 {
 	margin-top: 22px;
 	margin-left: 40px;
+	font-size: 2em;
 }
 
 .lodging-cards {
@@ -253,7 +266,7 @@ p {
 	border-radius: 20px 20px 0 0;
 }
 
-.lodging-card h2 {
+.lodging-card h3 {
 	margin-left: 16px;
 	margin-bottom: 9px;
 	font-weight: 700;
@@ -280,6 +293,7 @@ p {
 
 
 
+/* Popular section */
 .popular {
 	display: flex;
 	flex-basis: 30%;
@@ -314,6 +328,7 @@ p {
 	justify-content: space-between;
 }
 
+/* Individuak card */
 .popular-card {
 	display: flex;
 	height: 144px;
@@ -329,6 +344,7 @@ p {
 	border-radius: 20px 0 0 20px;
 }
 
+/* Grouping of title, subtitle and stars */
 .popular-item {
 	display: flex;
 	flex-direction: column;
@@ -336,7 +352,7 @@ p {
 	margin: 16px 22px 16px 15px;
 }
 
-.popular-item h2 {
+.popular-item h3 {
 	margin-bottom: 7px;
 }
 
@@ -344,18 +360,20 @@ p {
 	font-size: 1.4em;
 }
 
-
+/* Stars of lodging and popular section */
 .lodging-card span, .popular-item span {
 	color: #0065FC;
 	font-size: 1.4em;
 }
 
+/* Last star with different color */
 .lodging-card span i:last-child, .popular-item span i:last-child {
 	color: #f2f2f2
 }
 
 
 
+/* Activity section */
 .main-activities {
 	max-width: 1400px;
 	height: auto;
@@ -363,16 +381,11 @@ p {
 	margin-bottom: 60px;
 }
 
-.activities {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.main-activities h1 {
+.main-activities h2 {
 	margin: 60px 0 19px 20px;
 }
 
+/* Parent of cards */
 .activities-cards {
 	display: flex;
 	min-height: 444px;
@@ -381,6 +394,7 @@ p {
 	gap: 43px;
 }
 
+/* Activities items */
 .activities-card {
 	width: 100%;
 	height: 444px;
@@ -404,6 +418,7 @@ p {
 }
 
 
+/* Links for lodging, popular and activities sections cards */
 .lodging-cards a, .popular-list a, .activities-cards a {
 	color: #000;
 	text-decoration: none;
@@ -416,6 +431,7 @@ p {
 
 
 
+/* Main footer */
 .main-footer {
 	display: flex;
 	max-width: 1400px;
@@ -425,6 +441,7 @@ p {
 	background-color: #F2F2F2;
 }
 
+/* Group of footer sections */
 .footer-items {
 	display: flex;
 	flex-basis: 80%;
@@ -433,6 +450,7 @@ p {
 	margin-left: 80px;
 }
 
+/* Individual footer section */
 .footer-section {
 	width: 30%;
 	height: 100%;
@@ -458,9 +476,10 @@ p {
 }
 
 
+/* Media queries for tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-	h2 {
+	h3 {
 		font-size: 1.4em;
 	}
 	
@@ -469,7 +488,7 @@ p {
 	}
 
 
-
+	/* Lodging section */
 	.main-lodging {
 		flex-direction: column;
 	}
@@ -481,7 +500,7 @@ p {
 	}
 
 
-
+	/* Popular section */
 	.popular {
 		flex-basis: 100%;
 		justify-content: space-evenly;
@@ -516,8 +535,8 @@ p {
 	}
 
 
-
-	.activities h1 {
+	/* Activities section */
+	.activities h2 {
 		margin-bottom: 34px;
 	}
 
@@ -536,7 +555,7 @@ p {
 	}
 
 
-
+	/* Footer section */
 	.main-footer {
 		margin-left: 20px;
 		margin-right: 20px;
@@ -545,8 +564,10 @@ p {
 
 
 
+/* Media queries for mobile */
 @media screen and (max-width: 768px) {
 
+	/* Header section, with logo and navigation */
 	.main-header {
 		height: 160px;
 		flex-direction: column;
@@ -576,7 +597,7 @@ p {
 	}
 
 
-
+	/* Search section with filters and info text */
 	.main-search {
 		max-width: 375px;
 		margin: auto;
@@ -627,7 +648,7 @@ p {
 	}
 
 
-
+	/* Lodging section */
 	.main-lodging {
 		max-width: 100%;
 		margin: auto;
@@ -640,7 +661,7 @@ p {
 		background-color: #FFF;
 	}
 
-	.lodging h1 {
+	.lodging h2 {
 		margin-left: 20px;
 	}
 
@@ -656,7 +677,7 @@ p {
 		height: 124px;
 	}
 
-	.lodging-card h2 {
+	.lodging-card h3 {
 		margin-bottom: 6px;
 	}
 
@@ -666,7 +687,7 @@ p {
 	
 
 
-
+	/* Popular section */
 	.popular {
 		order: 1;
 		margin: 0;
@@ -683,12 +704,12 @@ p {
 	}
 
 
-
+	/* Activity section */
 	.main-activities {
 		margin-top: 34px;
 	}
 
-	.main-activities h1 {
+	.main-activities h2 {
 		width: 100px;
 		margin-top: 0;
 	}
@@ -700,7 +721,7 @@ p {
 	}
 
 	.activities-card {
-		width: 335px;
+		width: 295px;
 		height: 190px;
 	}
 
@@ -713,7 +734,7 @@ p {
 	}
 
 
-
+	/* Footer section */
 	.footer-items {
 		flex-direction: column;
 		justify-content: space-between;
