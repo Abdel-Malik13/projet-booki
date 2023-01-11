@@ -300,18 +300,18 @@ p {
 	display: flex;
 	flex-basis: 30%;
 	height: 640px;
+	justify-content: center;
+	align-items: flex-start;
 	margin: 0 20px;
 	padding: 15px;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: flex-start;
 	border-radius: 20px;
 	background-color: #F2F2F2;
 }
 
 .popular-title {
 	display: flex;
-	flex-basis: 84%;
+	flex-basis: 100%;
 	margin-top: 22px;
 	justify-content: space-between;
 	align-items: center;
@@ -324,7 +324,7 @@ p {
 
 .popular-list {
 	display: flex;
-	flex-basis: 343px;
+	flex-basis: 100%;
 	height: 500px;
 	flex-direction: column;
 	justify-content: space-between;
@@ -718,12 +718,12 @@ p {
 
 	.activities-cards {
 		flex-direction: column;
-		align-items: center;
+		/* align-items: center; */
 		height: 850px;
 	}
 
 	.activities-card {
-		width: 295px;
+		width: 100%;
 		height: 190px;
 	}
 
