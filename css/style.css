@@ -234,6 +234,7 @@ p {
 	display: flex;
 	flex-basis: 63%;
 	flex-wrap: wrap;
+	align-content: flex-start;
 	margin-left: 20px;
 	padding: 10px;
 	border-radius: 20px;
@@ -241,8 +242,7 @@ p {
 }
 
 .lodging h2 {
-	margin-top: 22px;
-	margin-left: 20px;
+	margin: 22px 0 20px 20px;
 	font-size: 2em;
 }
 
@@ -256,6 +256,7 @@ p {
 .lodging-links {
 	display: flex;
 	flex-grow: 1;
+	margin-bottom: 20px;
 }
 
 .lodging-card {
@@ -297,7 +298,7 @@ p {
 	font-size: 1.8em;
 	color: #000;
 	text-decoration: none;
-	margin: 21px 0 22px 20px;
+	margin: 15px 0 22px 20px;
 }
 
 
@@ -682,6 +683,7 @@ p {
 
 	.lodging h2 {
 		margin-left: 20px;
+		margin-bottom: 10px;
 	}
 
 	.lodging-card {
