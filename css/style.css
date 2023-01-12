@@ -242,19 +242,26 @@ p {
 
 .lodging h2 {
 	margin-top: 22px;
-	margin-left: 40px;
+	margin-left: 20px;
 	font-size: 2em;
 }
 
 .lodging-cards {
 	display: flex;
 	flex-wrap: wrap;
+	flex-grow: 1;
 	justify-content: space-evenly;
+}
+
+.lodging-links {
+	display: flex;
+	flex-grow: 1;
 }
 
 .lodging-card {
 	width: 236px;
 	height: 200px;
+	flex-grow: 1;
 	margin: 10px;
 	border-radius: 20px;
 	background-color: #FFF;
@@ -262,7 +269,7 @@ p {
 
 .lodging-card img {
 	object-fit: cover;
-	width: 236px;
+	width: 100%;
 	height: 114px;
 	border: 5px solid #FFF;
 	border-radius: 20px 20px 0 0;
@@ -290,7 +297,7 @@ p {
 	font-size: 1.8em;
 	color: #000;
 	text-decoration: none;
-	margin: 21px 0 22px 44px;
+	margin: 21px 0 22px 20px;
 }
 
 
@@ -501,6 +508,10 @@ p {
 		margin: 0 20px 53px 20px;
 	}
 
+	.lodging h2 {
+		margin-bottom: 16px;
+	}
+
 
 	/* Popular section */
 	.popular {
@@ -509,8 +520,9 @@ p {
 	}
 
 	.popular-title {
-		flex-basis: 90%;
-		margin-bottom: 26px;
+		/* flex-basis: 90%; */
+		/* margin-bottom: 26px; */
+		margin: 10px 10px 26px 10px;
 		justify-content: space-between;
 	}
 
@@ -518,14 +530,22 @@ p {
 		flex-basis: 100%;
 		height: auto;
 		flex-direction: row;
-		justify-content: space-evenly;
+		flex-grow: 1;
+		/* justify-content: space-evenly; */
+		gap: 10px;
 		margin-bottom: 22px;
 	}
 
+	.popular-list a {
+		display: flex;
+		width: 100%;
+	}
+
 	.popular-card {
-		width: 233px;
+		width: 100%;
 		height: 144px;
 		margin: 5px;
+		flex-grow: 1;
 	}
 
 	.popular-card + .popular-card {
@@ -663,19 +683,19 @@ p {
 		background-color: #FFF;
 	}
 
-	.lodging h2 {
+	/* .lodging h2 {
 		margin-left: 20px;
-	}
+	} */
 
 	.lodging-card {
 		width: 295px;
 		height: 205px;
-		margin: 10px 0 10px 0;
+		margin: 10px;
 		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
 	}
 
 	.lodging-card img {
-		width: 295px;
+		width: 100%;
 		height: 124px;
 	}
 
@@ -719,7 +739,7 @@ p {
 	.activities-cards {
 		flex-direction: column;
 		/* align-items: center; */
-		height: 850px;
+		min-height: 850px;
 	}
 
 	.activities-card {
