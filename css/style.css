@@ -520,8 +520,6 @@ p {
 	}
 
 	.popular-title {
-		/* flex-basis: 90%; */
-		/* margin-bottom: 26px; */
 		margin: 10px 10px 26px 10px;
 		justify-content: space-between;
 	}
@@ -531,7 +529,6 @@ p {
 		height: auto;
 		flex-direction: row;
 		flex-grow: 1;
-		/* justify-content: space-evenly; */
 		gap: 10px;
 		margin-bottom: 22px;
 	}
@@ -683,12 +680,11 @@ p {
 		background-color: #FFF;
 	}
 
-	/* .lodging h2 {
+	.lodging h2 {
 		margin-left: 20px;
-	} */
+	}
 
 	.lodging-card {
-		width: 295px;
 		height: 205px;
 		margin: 10px;
 		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
